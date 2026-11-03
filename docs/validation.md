@@ -21,8 +21,16 @@ Executada em 03/11/2026, Node 24, Windows e navegador integrado Chromium.
 
 GitHub Pages em repositório público disponível no GitHub Free: https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages . Sem cartão, trial, backend ou consumo de serviço faturável. Sem credenciais ou dados pessoais na aplicação.
 
-Verificação de histórico, clone remoto, autoria, CI, artefato e partidas públicas será registrada após o deploy.
+Gitleaks 8.30.1 com regras externas e saída redigida: staged, histórico completo, export e clone novo remoto sem achados. API GitHub confirmou somente `gustapaz` como contribuidor, autor/committer `Gustavo Paz <96732649+gustapaz@users.noreply.github.com>`. Secret scanning, proteção de push e atualizações de segurança habilitados. Implementação `05047491e6d58360b9e58eab3051138fc28b664f`, CI inicial `41643597314` aprovado.
 
 ## Limites
 
 Sem telefone físico, Safari, gamepad, avaliação auditiva humana ou leitor de tela integral. Blur/visibility/BFCache tratados sem prova física em todos os navegadores. Casas pequenas em formatos densos têm alternativa de seleção por botões grandes; não se promete precisão universal de toque. Primeiro passo seguro não é prova de solução exclusivamente lógica. Recordes de ações agregam seeds diferentes e não medem habilidade comparável. Sem save de rodada, sincronização ou garantia offline/invulnerabilidade/gratuidade permanente.
+
+## Demonstração pública
+
+- https://gustapaz.github.io/fresta/ : três vitórias pela interface, Baía 34/7, Travessia 50/17 e Platô 68/40 (casas seguras/ações).
+- Platô novamente concluído em viewport 390 × 844 por cliques, 68 casas/40 ações. No export local, a alternativa de setas de seleção + Explorar já havia sido usada para a partida completa de 39 ações. Não se trata de prova de toque físico em alvos de 24,5 px.
+- Baía: bandeira errada em L2 C3 e abertura de vizinhas de L1 C2 produziram derrota em três ações, com quatro casas seguras. Manual, preferências e reload mantiveram exatamente duas expedições/uma vitória/best7; partida em andamento voltou ao estado inicial.
+- Cinco arquivos do deploy inicial idênticos byte a byte ao build local. O acabamento esclarece que o terreno reproduzível depende de seed/formato e da mesma primeira casa, além de incluir evidências.
+- Screenshots public-gameplay.png e public-mobile.png. Logs do ambiente podem conter erros de extensões/canais; não se afirma console universalmente limpo ou ausência absoluta de vulnerabilidades.

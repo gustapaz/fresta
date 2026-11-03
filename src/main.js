@@ -173,7 +173,9 @@ const Reset = (s, { config = s.g.config, fresh = false } = {}) => {
       selected: 0,
       tool: "explore",
       message:
-        "Novo início. Escolha qualquer ponto; a primeira região será segura.",
+        !fresh && config === s.g.config && s.g.mines
+          ? "Para repetir o terreno, comece pela mesma primeira casa. A região inicial será segura."
+          : "Novo início. Escolha qualquer ponto; a primeira região será segura.",
     },
     Focus,
   ];
@@ -196,7 +198,7 @@ const Modal = (_, kind) => {
           "Bandeiras são hipóteses, não confirmações. Uma casa marcada não abre nem propaga zeros. O limite de bandeiras é o número de fendas do mapa. Não é preciso marcar todas para vencer.",
           "Escolha a ferramenta Explorar ou Marcar e toque nas casas. Botão direito também marca. Com a área focada: setas/WASD movem a seleção; Enter/Espaço explora, F marca, C abre vizinhas. Há botões grandes equivalentes, úteis em telas pequenas.",
           "Abrir vizinhas num número aberto exige igual quantidade de bandeiras ao redor. Todas as vizinhas não marcadas serão exploradas; uma bandeira errada pode causar derrota.",
-          "Repetir mapa mantém seed e formato. Novo mapa troca seed. Reiniciar abandona a tentativa sem registrar resultado. Recordes locais são separados por formato, mas mapas diferentes podem exigir quantidades de ações diferentes. Não há cronômetro.",
+          "Repetir mapa mantém seed e formato. Para reproduzir o terreno, comece também pela mesma primeira casa. Novo mapa troca seed. Reiniciar abandona a tentativa sem registrar resultado. Recordes locais são separados por formato, mas mapas diferentes podem exigir quantidades de ações diferentes. Não há cronômetro.",
           "Escape/P pausa, e a perda de foco também. Preferências e resultados ficam neste navegador; a expedição em andamento não é salva.",
         ]
       : [

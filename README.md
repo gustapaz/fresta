@@ -20,7 +20,7 @@ A primeira exploração gera um mapa determinístico pela seed exibida e protege
 - Com a área focada, setas/WASD movem a seleção; Enter/Espaço explora; F marca; C abre vizinhas; Escape/P pausa.
 - Botões direcionais e ações grandes oferecem as mesmas operações, úteis nos formatos densos no celular. As casas do Platô ficam pequenas em telas estreitas.
 - Abrir vizinhas exige um número aberto com igual quantidade de bandeiras ao redor. Todas as vizinhas não marcadas serão exploradas; bandeiras erradas podem causar derrota.
-- Repetir mantém seed/formato. Novo mapa muda a seed. Reiniciar abandona a tentativa sem registrar resultado. Não há cronômetro.
+- Repetir mantém seed/formato; comece pela mesma primeira casa para reproduzir o terreno. Novo mapa muda a seed. Reiniciar abandona a tentativa sem registrar resultado. Não há cronômetro.
 
 Bandeiras são hipóteses e bloqueiam exploração/propagação; o limite é o número de fendas. A menor quantidade de ações numa vitória fica registrada por formato, em qualquer seed; mapas diferentes podem exigir ações diferentes, portanto não é um ranking comparável ou protegido.
 
@@ -47,3 +47,5 @@ Sem backend, chaves, contas, compras, cartão, faturamento ou trial. Preferênci
 Código do jogo MIT. Hyperapp MIT com atribuição preservada em third-party.txt. Mapa fictício, sem orientação real para expedições. Nenhum nível, sprite, marca ou asset de jogo comercial importado.
 
 [Design](docs/game-design.md) · [Assets/licenças](docs/assets.md) · [Testes e limites](docs/validation.md)
+
+![Fresta concluído na demo pública](docs/public-gameplay.png)
